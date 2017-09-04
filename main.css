@@ -1,0 +1,550 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+  color: #383838;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  overflow-x: hidden;
+}
+
+a {
+  text-transform: none;
+  letter-spacing: 0.5px;
+}
+
+div {
+    display: block;
+
+}
+
+h1 {
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: 4px;
+
+}
+
+h2 {
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 7px;
+
+}
+
+h3 {
+  visibility: hidden;
+  opacity: 0;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 700;
+  -webkit-transition: opacity 0.5s; /* Safari */
+    transition: opacity 0.5s;
+}
+
+h4 {
+  font-size: 12px;
+  font-weight: 400;
+  text-align: center;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: opacity 0.5s; /* Safari */
+    transition: opacity 0.5s;
+    margin-top: 5px;
+}
+
+h5 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  font-weight: normal;
+  color: #383838;
+  letter-spacing: 1.2px;
+  padding-top: 35px;
+  padding-bottom: 35px;
+    text-transform: uppercase;
+}
+
+p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  color: #383838;
+    line-height: 25px;
+    text-transform: none;
+    letter-spacing: 0.5px;
+}
+
+p1 {
+  font-weight: bold;
+  text-transform: none;
+  letter-spacing: 0.5px;
+
+}
+
+
+.nav {
+  position: fixed;
+  background-color: white;
+  display: table;
+  z-index: 1000;
+  width: 100%;
+  float: top;
+  padding-left: 100px;
+  top: 0;
+}
+
+.body {
+
+}
+
+.menu ul {
+  display: table-row;
+
+}
+
+.menu ul li {
+  display: table-cell;
+  height: 80px;
+  list-style-type: none;
+  padding: 0px 15px;
+  vertical-align: middle;
+  font-size: 12px;
+  float: left;
+}
+
+.menu li:last-child {
+  float: right;
+  padding-right: 0;
+}
+
+.menu ul li a:hover {
+  color: #E6E7E8;
+}
+
+.menu ul li a {
+  display: table-cell;
+  vertical-align: middle;
+  height: 80px;
+  -webkit-transition: color 0.5s; /* Safari */
+    transition: color 0.5s;
+}
+
+#logo {
+  width: 40px;
+  height: 40px;
+  background-image: url(images/logo.png);
+  background-size: cover;
+  background-position: center;
+  -webkit-transition: background-image 0.5s; /* Safari */
+    transition: background-image 0.5s;
+}
+
+#logo:hover {
+  background-image: url(images/white-logo.png);
+}
+
+.bio {
+  padding: 30px 0 30px 110px;
+  background-color: white;
+  position: relative;
+  margin: 80px 0 0;
+
+}
+
+.profile-pic {
+  width: 150px;
+  vertical-align:middle;
+  display: inline-block;
+}
+
+.name {
+  display: inline-block;
+  margin-left: 30px;
+  vertical-align:middle;
+
+}
+
+nav.social-icons ul li a{
+    background-color: #fff;
+    border-radius: 50%;
+    display: inline-block;
+  width: 30px;
+  height: 30px;
+  font-size: 13px;
+  text-align: center;
+    vertical-align: bottom;
+  text-align: center;
+  line-height: 30px;
+  overflow: hidden;
+  -webkit-transition: background-color 0.5s; /* Safari */
+    transition: background-color 0.5s;
+}
+
+.fa{
+  color: #383838;
+  -webkit-transition: color 0.5s; /* Safari */
+    transition: color 0.5s;
+}
+
+nav.social-icons ul li a:hover .fa {
+  color: white;
+}
+
+nav.social-icons ul li a:hover{
+    background-color: #383838;
+    color: white;
+}
+
+nav.social-icons ul li {
+  display: inline-block;
+  padding-right: 15px;
+}
+
+nav.social-icons ul {
+    display: inline-block;
+    text-align: left;
+}
+
+.social-icons {
+  padding: 12px 12px 12px 0;
+}
+
+/* Home */
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.image:after {
+  background: rgba(255,255,255,0.8);
+  bottom: 0;
+  content: '';
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: opacity 0.5s;
+}
+
+.content-grid {
+  margin: 0 auto;
+  max-width: 1150px;
+  padding: 10px;
+}
+
+.content-grid a {
+  display: block;
+  float: left;
+  position: relative;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.content-grid a:hover .image:after,
+.content-grid a:hover .info {
+  opacity: 1;
+}
+
+a:hover h3 {
+  visibility: visible;
+  opacity: 1;
+}
+
+a:hover h4 {
+  visibility: visible;
+  opacity: 1;
+}
+
+.info {
+  color: #383838;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  height: 100%;
+  letter-spacing: 2px;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  transition: opacity 0.5s;
+}
+
+.table{
+    display:table;
+    width:100%;
+    height:100%;
+}
+.table-cell{
+    display:table-cell;
+    text-align: center;
+    vertical-align:middle;
+}
+
+.bg{
+    background-position:center center;
+    background-repeat:no-repeat;
+    background-size:cover; /* you change this to "contain" if you don't want the images to be cropped */
+    color:#fff;
+}
+
+.crop {
+    height: 400px;
+    overflow: hidden;
+    margin-bottom: 35px;
+    margin-top: 35px;
+    text-align: center;
+}
+
+.crop img {
+
+    height: 600px;
+    margin: -30px 0 0 -50px;
+}
+
+.pic {
+  width: 400px;
+  max-width: 100%;
+  display: inline-block;
+  vertical-align: middle;
+  margin-bottom: 3px;
+  margin-top: 3px;
+}
+
+.big-pic {
+  width: 1000px;
+  max-width: 100%;
+  display: inline-block;
+  margin-bottom: 3px;
+  margin-top: 3px;
+}
+
+.small-pic {
+  width: 250px;
+  max-width: 100%;
+  display: inline-block;
+  margin-bottom: 3px;
+  margin-top: 3px;
+}
+
+/* About */
+
+.about {
+  padding: 0 400px 50px 400px;
+}
+
+/* Contact */
+
+.contact {
+  padding: 0 200px 50px 200px;
+}
+
+/* Projects */
+
+.portfolio-profile {
+  width: 150px;
+  vertical-align:middle;
+  display: inline-block;
+  border-radius: 50%;
+}
+
+.description a {
+  color: #FF6C61;
+  opacity: 1;
+    -webkit-transition: opacity 0.5s; /* Safari */
+    transition: opacity 0.5s;
+}
+
+.description a:hover {
+  color: #FF6C61;
+  opacity: 0.3;
+}
+
+.description {
+  padding: 0px 200px 50px 200px;
+}
+
+.collage {
+  text-align: center;
+}
+
+.prototype {
+  text-align: center;
+  margin-top: -100px;
+  margin-bottom: -100px;
+}
+
+#prototype {
+  transform: scale(0.7);
+}
+
+.nav-projects {
+  padding: 0px 200px 70px 200px;
+}
+
+.icon {
+  width: 50px;
+  height: 50px;
+  background-color: #f5f5f5;
+  border-radius: 50%;
+  line-height: 50px;
+  text-align: center;
+  display: inline-block;
+  float: left;
+  overflow: hidden;
+  -webkit-transition: background-color 0.5s; /* Safari */
+    transition: background-color 0.5s;
+
+}
+
+.icon:hover {
+  background-color: #383838;
+}
+
+
+.icon:hover .fa {
+  color: white;
+}
+
+.next {
+  float: right;
+}
+
+/* MEDIA QUERIES */
+
+/* For any screen under 1024px, usually tablets and phones, add the following styles */
+@media (max-width: 1024px) {
+  /* Since 3 columns don't horizontally fit anymore, just make columns screen-wide */
+  .nav {
+    padding-left: 50px;
+  }
+
+  .bio {
+  padding: 30px 0 30px 60px;
+  }
+
+  .about {
+  padding: 0 150px 50px 150px;
+
+  }
+
+  .contact {
+  padding: 0 150px 50px 150px;
+
+  }
+
+  .description {
+  padding: 0px 150px 50px 150px;
+  }
+
+  .pic {
+    width: 300px;
+  }
+
+  .small-pic {
+    width: 200px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .content-grid a {
+    width: 32.6822917%;
+    margin: 0.488281%;
+  }
+
+  .content-grid a:nth-child(3n) {
+    margin-right: 0;
+  }
+
+  .content-grid a:nth-child(3n + 1) {
+    clear: left;
+    margin-left: 0;
+  }
+}
+
+/* For any screen under 640px, usually phones, add the following styles */
+@media (max-width: 640px) {
+  /* Hide anything with this class when the screen size is small enough */
+  .hide-mobile {
+    display: none;
+  }
+
+  .nav {
+    padding-left: 10px;
+  }
+  .bio {
+  text-align: center;
+  padding: 30px 0 30px 0px;
+
+  }
+  .profile-pic {
+  width: 150px;
+  margin-bottom: 10px;
+  }
+
+  .name {
+  margin-left: 0px;
+  vertical-align:middle;
+  display: block;
+
+  }
+
+  nav.social-icons ul li a{
+    margin-top: 10px;
+  width: 40px;
+  height: 40px;
+  font-size: 16px;
+  line-height: 45px;
+  text-align: center;
+  vertical-align: bottom;
+  }
+
+  .social-icons {
+  padding: 12px 12px 0px 12px;
+  }
+
+  .about {
+  padding: 0 25px 50px 25px;
+
+  }
+
+  .contact {
+  padding: 0 25px 50px 25px;
+
+  }
+
+  .description {
+  padding: 0px 25px 50px 25px;
+  }
+
+  .prototype {
+    overflow: none;
+  }
+
+  .portfolio-profile {
+    margin-bottom: 10px;
+  }
+
+  .nav-projects {
+  padding: 0px 25px 35px 25px;
+  }
+
+  #prototype {
+  transform: scale(0.6);
+  }
+
+  .square {
+    position: relative;
+    width: 100%;
+    padding-bottom : 100%; /* = width for a 1:1 aspect ratio */
+    margin:1.66%;
+    background-color: white;
+    overflow: hidden;
+    opacity: 1;
+
+  }
+  .wrapper {
+  padding: 10px 20px 10px 10px;
+  }
+}
